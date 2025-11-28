@@ -1,3 +1,6 @@
+This image is to illustrate adding the Cosmic Desktop as a login option for Aurora.  The only 2 changes from the Universal Blue Template are the change to the base image in Containerfile and the additon of the ryanabex/cosmic-epoch COPR repo and installation of the cosmic-desktop in the build file.  **Note: I've disabled the automatic daily build in the .github directory.**
+
+
 # image-template
 
 This repository is meant to be a template for building your own custom [bootc](https://github.com/bootc-dev/bootc) image. This template is the recommended way to make customizations to any image published by the Universal Blue Project.
