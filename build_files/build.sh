@@ -16,10 +16,11 @@ set -ouex pipefail
 #
 dnf5 -y copr enable ryanabx/cosmic-epoch
 dnf5 -y install cosmic-desktop
+mkdir /nix
+dnf5 -y install nix
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
-mkdir /nix
