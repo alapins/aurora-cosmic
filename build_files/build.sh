@@ -26,5 +26,7 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix 
 # dnf5 -y copr disable ublue-os/staging
 
 #### Example for enabling a System Unit File
+systemctl disable sddm.service
+systemctl enable cosmic-greeter.service
 
 systemctl enable podman.socket
