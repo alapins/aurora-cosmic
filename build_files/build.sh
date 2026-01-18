@@ -16,7 +16,11 @@ set -ouex pipefail
 #
 dnf5 -y copr enable ryanabx/cosmic-epoch
 dnf5 -y install cosmic-desktop
-mkdir /nix
+
+dnf5 -y copr enable scottames/ghostty
+dnf5 -y install ghostty
+
+curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install ostree --no-confirm --persistence=/var/lib/nix   
 
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
