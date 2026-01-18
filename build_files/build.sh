@@ -19,6 +19,14 @@ dnf5 -y install cosmic-desktop
 
 dnf5 -y copr enable scottames/ghostty
 dnf5 -y install ghostty
+dnf5 -y install nushell
+dnf5 -y install lazygit
+dnf5 -y install lazydocker
+dnf5 -y install carapace
+dnf5 -y install bat
+dnf5 -y install dust
+dnf5 -y install yazi
+dnf5 -y install neovim
 
 # Install nix
 # curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install ostree --no-confirm --persistence=/var/lib/nix   
@@ -29,5 +37,7 @@ dnf5 -y install ghostty
 #### Example for enabling a System Unit File
 systemctl disable sddm.service
 systemctl enable cosmic-greeter.service
+
+
 
 systemctl enable podman.socket
