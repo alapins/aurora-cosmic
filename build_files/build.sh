@@ -22,3 +22,4 @@ dnf5 -y install cosmic-desktop
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+mkdir /nix
